@@ -34,7 +34,6 @@ app.use(helmet({
 // Convert URL to path for __dirname equivalent
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'hbs');
 app.set('view engine', 'ejs');
 
 // Home route
